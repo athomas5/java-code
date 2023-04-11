@@ -7,8 +7,8 @@ public class UserService {
         this.userDAO = userDAO;
     }
 
-    public void save(User user) {
-        userDAO.save(user);
+    public User save(User user) {
+        return userDAO.save(user);
     }
 
     public User get(int id) {
@@ -19,11 +19,11 @@ public class UserService {
         return userDAO.getAll();
     }
 
-    public void update(User user) {
-        userDAO.update(user);
+    public User update(User user) {
+        return userDAO.update(user);
     }
 
-    public void delete(int id) {
-        userDAO.delete(id);
+    public User delete(int id) {
+        return userDAO.delete(id);
     }
 }

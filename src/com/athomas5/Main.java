@@ -3,8 +3,8 @@ package com.athomas5;
 public class Main {
 
     public static void main(String[] args) {
-        UserDAO userDAO = new UserDAO();
-        UserService userService = new UserService(userDAO);
+        UserDAOImpl userDAOImpl = new UserDAOImpl();
+        UserService userService = new UserService(userDAOImpl);
         UserController userController = new UserController(userService);
 
         User user0 = new User(0, "Admin 0");

@@ -7,8 +7,8 @@ public class UserController {
         this.userService = userService;
     }
 
-    public void save(User user) {
-        userService.save(user);
+    public User save(User user) {
+        return userService.save(user);
     }
 
     public User get(int id) {
@@ -19,11 +19,11 @@ public class UserController {
         return userService.getAll();
     }
 
-    public void update(User user) {
-        userService.update(user);
+    public User update(User user) {
+        return userService.update(user);
     }
 
-    public void delete(int id) {
-        userService.delete(id);
+    public User delete(int id) {
+        return userService.delete(id);
     }
 }
