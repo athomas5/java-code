@@ -8,11 +8,12 @@ public class UserDAOImpl implements UserDAO {
     }
 
     public void initDatabase() {
-        users[0] = new User(0, "Admin");
-        users[1] = new User(1, "Bob");
-        users[2] = new User(2, "Alice");
-        users[3] = new User(3, "John");
-        users[4] = new User(4, "Jane");
+        users[0] = User.builder().id(0).name("Admin").build();
+        users[1] = User.builder().id(1).name("Bob").build();
+        users[2] = User.builder().id(2).name("Alice").build();
+        users[3] = User.builder().id(3).name("John").build();
+        users[4] = User.builder().id(4).name("Jane").build();
+
         nextId = 5;
     }
 
